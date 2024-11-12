@@ -1,0 +1,14 @@
+post-merge:
+  commands:
+    update-backend:
+      run: npm install
+    update-frontend:
+      run: cd frontend && npm install
+
+pre-commit:
+  parallel: true
+  commands:
+    backend-linter:
+      run: npm run lint
+    frontend-linter:
+      run: cd frontend && npm run lint
