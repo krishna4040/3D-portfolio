@@ -1,17 +1,7 @@
-import { Link } from "react-router-dom"
+import CTA from "./CTA"
+import Loader from "./Loader"
+import Navbar from "./Navbar"
+import Footer from "./Footer"
+import HomeInfo from "./HomeInfo"
 
-const CTA = () => {
-  return (
-    <section className="cta">
-      <p className="cta-text">
-        Have a project in mind? <br className="sm:block hidden" />
-        Let’s build something together!
-      </p>
-      <Link to="/contact" className="btn">
-        Contact
-      </Link>
-    </section>
-  )
-}
-
-export default CTA
+export { CTA, Loader, Navbar, Footer, HomeInfo }
