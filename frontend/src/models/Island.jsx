@@ -51,7 +51,7 @@ export function Island({
   const handlePointerUp = (event) => {
     event.stopPropagation()
     event.preventDefault()
-    setIsRotating(false)
+    // setIsRotating(false)
   }
 
   // Handle pointer (mouse or touch) move event
@@ -95,7 +95,7 @@ export function Island({
   // Handle keyup events
   const handleKeyUp = (event) => {
     if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
-      setIsRotating(false)
+      // setIsRotating(false)
     }
   }
 
@@ -112,7 +112,7 @@ export function Island({
   const handleTouchEnd = (e) => {
     e.stopPropagation()
     e.preventDefault()
-    setIsRotating(false)
+    // setIsRotating(false)
   }
 
   const handleTouchMove = (e) => {
